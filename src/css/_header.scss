@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  min-height: 120vh;
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+
+  .header__content {
+    position: absolute;
+    border: 1px solid;
+    top: 30%;
+    color: $white;
+    left: 50%;
+    transform: translate(-50%);
+    h1 {
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 50px !important;
+    }
+
+    .button {
+      background-color: darken($color: $primary-color, $amount: 10%);
+      color: $white;
+      padding: 20px 50px !important;
+      margin-top: 100px !important;
+      border: 1px solid darken($color: $primary-color, $amount: 10%);
+      &:hover {
+        color: $secondary-color;
+        border-color: $secondary-color;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+  }
+}
+
+.navbar {
+  background-color: #eee;
+  //darken($color: $primary-color, $amount: 20%);
+
+  .navbar-brand {
+    img {
+      object-fit: contain;
+      height: 50px;
+    }
+  }
+}

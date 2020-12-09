@@ -1,0 +1,58 @@
+.testimonies__section {
+  // background-image: linear-gradient(
+  //     0deg,
+  //     lighten($primary-color, 10%),
+  //     rgba(255, 0, 150, 0.3)
+  //   ),
+  //   url("../assets/bg.jpg");
+
+  .testimonies {
+    .testimony {
+      background-color: $white;
+      text-align: center;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      padding: 40px 20px;
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+    }
+  }
+}
+
+.testmonies__bg {
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+}
+
+.addTestimony {
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+  margin-bottom: 100px;
+
+  form {
+    margin: auto;
+  }
+
+  .section__heading {
+    margin-top: 5%;
+    h1 {
+      color: $white;
+    }
+    h6 {
+      color: $white;
+    }
+  }
+}

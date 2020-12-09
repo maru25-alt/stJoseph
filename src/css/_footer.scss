@@ -1,0 +1,30 @@
+.footer {
+  color: $white;
+
+  p,
+  li,
+  a {
+    color: darken($color: $white, $amount: 20%);
+    font-weight: 100;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .footer-top {
+    background-color: darken($color: $primary-color, $amount: 15%);
+    padding: 50px;
+
+    hr {
+      width: 30%;
+      height: 1px;
+      background-color: $secondary-color;
+    }
+  }
+  .footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+    background-color: darken($color: $primary-color, $amount: 20%);
+  }
+}

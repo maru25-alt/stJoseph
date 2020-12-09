@@ -1,0 +1,74 @@
+.about__section {
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .about__content {
+    color: darken($color: $white, $amount: 12%);
+  }
+}
+.aboutus {
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 255),
+      rgba(238, 235, 237, 0.7)
+    ),
+    url("../assets/favicon-free-img.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.staff {
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .staff__member {
+    color: $white;
+    text-align: center;
+
+    h6 {
+      color: $secondary-color;
+      font-size: 1.4em;
+      font-weight: 600;
+    }
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.letter {
+  img {
+    transform: rotate(20deg);
+    border: 1px solid;
+  }
+}
+
+.socials {
+  padding: 10px;
+  color: $primary-color;
+}

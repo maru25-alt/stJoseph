@@ -1,0 +1,168 @@
+@import "./config";
+@import "./responsive";
+@import "./header";
+@import "./site-tour";
+@import "./about";
+@import "./footer";
+@import "./testimonies";
+@import "./contact";
+@import "./services";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+}
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.section {
+  padding: 110px 100px;
+}
+
+.upper__text {
+  text-transform: uppercase;
+}
+
+.sectionFull {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border-radius: 0;
+  padding: 10px 30px;
+  margin: 50px 0;
+  background-color: transparent;
+  border: none;
+  color: $black;
+}
+
+.white-button {
+  background-color: darken($color: $white, $amount: 10%);
+  border: 1px solid darken($color: $white, $amount: 10%);
+
+  &:hover {
+    color: darken($color: $white, $amount: 10%);
+    background-color: transparent;
+  }
+}
+
+.info-button {
+  color: $white;
+  background-color: darken($color: $primary-color, $amount: 10%);
+  padding: 15px 40px;
+}
+
+.info-Btn {
+  color: $white;
+  background-color: darken($color: $primary-color, $amount: 10%);
+  padding: 15px 40px;
+  border: 1px solid darken($color: $primary-color, $amount: 10%);
+
+  &:hover {
+    color: $secondary-color;
+
+    border-color: $secondary-color;
+  }
+}
+
+.yellow-badge {
+  background-color: darken($color: $secondary-color, $amount: 20%);
+}
+
+.success-Btn {
+  border: 1px solid $secondary-color;
+  color: darken($color: $secondary-color, $amount: 20%);
+  padding: 15px 40px;
+  margin-left: 20px;
+
+  &:hover {
+    background-color: darken($color: $secondary-color, $amount: 20%);
+    color: $black;
+  }
+}
+
+.centered {
+  margin-left: 50% !important;
+  transform: translateX(-50%);
+  text-align: center !important;
+}
+
+.section__heading {
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-bottom: 100px;
+
+  .centered {
+    margin: 0 auto;
+  }
+
+  h6 {
+    margin-bottom: 50px;
+  }
+
+  hr {
+    width: 20%;
+    font-weight: bolder;
+    height: 1px;
+    background-color: $secondary-color;
+  }
+}
+
+//page header
+.page__header {
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+  min-height: 90vh;
+  position: relative;
+
+  .page__header-text {
+    position: absolute;
+    color: $white !important;
+    bottom: 20px;
+    left: 40px;
+
+    hr {
+      background-color: $white;
+    }
+  }
+}
+
+.image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}

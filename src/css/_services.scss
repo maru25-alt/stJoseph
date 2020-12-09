@@ -1,0 +1,108 @@
+.services {
+  .services__container {
+    margin-top: 50px;
+
+    h6 {
+      text-transform: uppercase;
+      color: $primary-color;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.care__options {
+  background-color: $primary-color;
+  color: darken($color: $white, $amount: 10%);
+
+  .section__heading {
+    color: $white;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    h1 {
+      margin-bottom: 2em;
+    }
+    h6 {
+      margin-bottom: 2em;
+    }
+  }
+  .option {
+    p {
+      color: darken($color: $white, $amount: 20%);
+    }
+    h6 {
+      color: $secondary-color;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bullets {
+    border-radius: 50%;
+    background-color: $white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.respite__care {
+  .img__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pricing {
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section__heading {
+    color: $white;
+  }
+
+  .price {
+    background-color: $white;
+    min-height: 20vh;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    h6 {
+      color: $secondary-color;
+    }
+
+    h2 {
+      color: darken($color: $primary-color, $amount: 5%);
+      span {
+        font-size: 1.7em;
+      }
+    }
+  }
+}
+
+.employment {
+  p {
+    text-transform: none;
+  }
+
+  .employment__text {
+    text-align: left;
+  }
+}
