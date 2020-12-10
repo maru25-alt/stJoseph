@@ -1,15 +1,14 @@
 import React from 'react';
-import img from '../assets/respite-care.png'
+import img from '../assets/aging-in-place.jpg'
 
 
 
 function AboutSection() {
     return (
         <div className="section about__section">
-           <div className="about__content row">
+           <div className="about__content  row">
                <div className="col-sm-12 col-md-6">
                     <div className="section__heading">
-                            <h6>Who we are</h6>
                             <h1>About Us</h1>
                             <hr/>
                     </div>

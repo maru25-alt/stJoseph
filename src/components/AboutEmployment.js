@@ -1,12 +1,20 @@
 import React from 'react'
 import img from '../assets/request-info.jpg'
+import img2 from '../assets/refer-a-friend.jpg'
+
 
 function AboutEmployment() {
     return (
         <div id="employment" className="section employment">
            <div className="row">
-               <div className="col-sm-12 col-md-2 image__container">
-                   <img src={img} alt="info"/>
+               <div className="col-sm-12 col-md-2">
+                   <div className=" image__container mb-5">
+                        <img src={img} alt="info"/>
+                   </div>
+                   <div className=" image__container mt-5">
+                        <img src={img2} alt="info"/>
+                   </div>
+                  
                </div>
                <div className="col-sm-12 col-md-10">
                    <div className="section__heading text-center">

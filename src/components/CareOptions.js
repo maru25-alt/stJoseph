@@ -1,19 +1,23 @@
 import React from 'react'
 import {care_options} from '../data';
-import img from '../assets/bg.jpg'
+import img from '../assets/parlor-room.jpg'
 
 function CareOptions() {
     return (
-        <div id="care__options" className="section row care__options ">
-            <div className="col-sm-12 col-md-3 section__heading">
-                <h1>Care Options</h1> 
-                <h6>RESIDENTS ARE SUPPORTED AND ENCOURAGED TO RESIDE AT THE MOST INDEPENDENT LEVEL OF CARE CONSISTENT WITH THEIR NEEDS AND SAFETY STANDARDS. EACH RESIDENT’S NEEDS ARE ASSESSED BY A PHYSICIAN OR REGISTERED NURSE WITHIN 72 HOURS OF ADMISSION. THE DIRECT CARE MANAGER ASSESSES THE RESIDENT PERIODICALLY.</h6>
-                <hr/>
+        <div id="care__options" className=" row care__options ">
+            <div className="col-sm-12 col-md-3">
+                <div className="section__heading">
+                    <h1>Care Options</h1> 
+                    <h6>RESIDENTS ARE SUPPORTED AND ENCOURAGED TO RESIDE AT THE MOST INDEPENDENT LEVEL OF CARE CONSISTENT WITH THEIR NEEDS AND SAFETY STANDARDS. EACH RESIDENT’S NEEDS ARE ASSESSED BY A PHYSICIAN OR REGISTERED NURSE WITHIN 72 HOURS OF ADMISSION. THE DIRECT CARE MANAGER ASSESSES THE RESIDENT PERIODICALLY.</h6>
+                    <hr/>
+                </div>
+               
             </div>
             <div className="col-sm-12 col-md-3">
                 <img src={img} alt="careOptions"/>
             </div>
             <div className="col-sm-12 col-md-6">
+                <div className="options">
                 {care_options.map((option, index) => {
                     return(
                         <div key={index} className="option row">
@@ -28,6 +32,9 @@ function CareOptions() {
                         </div>
                     )
                 })}
+
+                </div>
+                
 
             </div>
         </div>

@@ -13,18 +13,21 @@ function ServicesSection() {
            <div className="services__contents row">
                  {services.map((service, index) => {
                      return(
-                         <div key={index} className="service col-xs-12 col-sm-6 col-md-4">
-                             <i class="fab fa-artstation fa-3x centered"></i>
-                              <h3>{service.name}</h3>
-                              <ul>
-                                  {service.items.map((item, i) => {
-                                      return(
-                                          <li key={i}>{item}</li>
-                                      )
-                                  })}
-                              </ul>
+                         <div key={index} className=" col-xs-12 col-sm-12 col-md-4">
+                             <div className={ index % 2 !== 0 ? "service outService " : ` service`}>
+                                <i class="fab fa-artstation fa-3x "></i>
+                                <h3>{service.name}</h3>
+                                <ul>
+                                    {service.items.map((item, i) => {
+                                        return(
+                                            <li key={i}>{item}</li>
+                                        )
+                                    })}
+                                </ul>
 
-                              <a href="services#offers" className="button info-Btn">Details</a >
+                                <a href="services#offers" className="button info-Btn">Details</a >
+                             </div>
+                            
                          </div>
                      )
                  })}

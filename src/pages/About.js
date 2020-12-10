@@ -9,7 +9,7 @@ function About() {
         <div>
              <PageHeader title="About Us"/>
             <AboutUs/>
-            <Staff/>
+            {/* <Staff/> */}
             <AdminLetter/>
 
         </div>

@@ -23,9 +23,12 @@ function TestimoniesSection({bg}) {
                      )
                 })}
             </div>
-            <div className="text-center">
-                <button className="button white-button ">View More</button>
-            </div>
+            {!bg && 
+                <div className="text-center">
+                   <a  href="/testimonies" className="button white-button ">View More</a>
+               </div>
+            }
+           
 
           
         </div>

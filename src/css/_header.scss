@@ -1,6 +1,7 @@
 .header {
   position: relative;
   min-height: 120vh;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       0deg,
       lighten($primary-color, 10%),
@@ -8,13 +9,50 @@
     ),
     url("../assets/bg.jpg");
 
+  @keyframes backInLeft {
+    0% {
+      -webkit-transform: translateX(-2000px) scale(0.7);
+      transform: translateX(-2000px) scale(0.7);
+      opacity: 0.7;
+    }
+
+    80% {
+      -webkit-transform: translateX(0px) scale(0.7);
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
   .header__content {
     position: absolute;
-    border: 1px solid;
+    border: 1px solid $secondary-color;
     top: 30%;
     color: $white;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 0 20%;
+
+    padding: 10px;
+    //transform: translate(-50%);
+    // animation-duration: 3s;
+    // animation-name: backInLeft;
+
     h1 {
       margin-bottom: 30px;
     }
@@ -45,12 +83,42 @@
 
 .navbar {
   background-color: #eee;
-  //darken($color: $primary-color, $amount: 20%);
+
+  @media #{$mobile_device} {
+    background-color: darken($color: $primary-color, $amount: 10%);
+  }
+
+  //$tablet_device
+  @media #{$tablet_device} {
+    background-color: darken($color: $primary-color, $amount: 10%);
+  }
+  //$mid_device
+  // @media #{$mid_device} {
+  //   background-color: $secondary-color;
+  // }
 
   .navbar-brand {
     img {
       object-fit: contain;
       height: 50px;
+    }
+  }
+
+  .navbar-toggler-icon {
+    color: $white !important;
+  }
+
+  .nav-link {
+    font-size: larger;
+    color: $primary-color !important;
+    @media #{$mobile_device} {
+      color: $white !important;
+    }
+    @media #{$tablet_device} {
+      color: $white !important;
+    }
+    &:hover {
+      color: darken($color: $secondary-color, $amount: 10%) !important;
     }
   }
 }

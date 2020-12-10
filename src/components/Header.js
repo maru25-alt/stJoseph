@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="header">
             {/* <img src="https://demo.athemes.com/sydney/wp-content/uploads/sites/103/2019/12/Slider_image-1.png" alt="" /> */}
-            <div className="header__content">
+            <div className="header__content animate__animated animate__backInLeft ">
                  <div className="text-center">
                       <h1>{header_text}</h1>
                       <p className="mb-4">{bio}</p>

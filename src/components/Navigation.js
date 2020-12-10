@@ -6,7 +6,7 @@ import logo from '../assets/st-joseph-logo.jpg'
 
 function Navigation() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light ">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark ">
         <a className="navbar-brand" href="/">
             <img src={logo} alt=""/>
         </a>
@@ -18,7 +18,7 @@ function Navigation() {
                     {routes && routes.map(link =>  {
                         return (
                             <li key={link.route}  className="nav-item ">
-                                <NavLink activeStyle={{ color: ' #46237a' }} className="nav-link"to={link.route}>{link.name}</NavLink>
+                                <NavLink activeStyle={{ color:'#ef833a' }} className="nav-link" to={link.route}>{link.name}</NavLink>
                             </li>
                         )
                     }

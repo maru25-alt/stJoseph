@@ -6,6 +6,12 @@
   //   ),
   //   url("../assets/bg.jpg");
 
+  .button {
+    background-color: darken($color: $primary-color, $amount: 10%) !important;
+    border-color: $secondary-color !important;
+    color: $secondary-color;
+  }
+
   .testimonies {
     .testimony {
       background-color: $white;
@@ -13,6 +19,10 @@
       border-radius: 20px;
       margin-bottom: 50px;
       padding: 40px 20px;
+
+      p {
+        color: #444;
+      }
 
       img {
         border-radius: 50%;

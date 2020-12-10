@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/respite-care.png'
+import img from '../assets/6.png'
 import {respite_care} from '../data'
 
 function RespiteCare() {

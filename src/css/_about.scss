@@ -10,7 +10,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  img {
+    object-fit: contain;
+    width: 100%;
+    border: 2px $secondary-color dotted;
+    margin-bottom: 50px;
+  }
   .about__content {
+    display: flex;
+
+    @media #{$mobile_device} {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .about__content h6 {
+    color: $secondary-color;
+  }
+
+  .about__content p {
     color: darken($color: $white, $amount: 12%);
   }
 }
@@ -25,10 +43,19 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media #{$mobile_device} {
+    flex-direction: column-reverse;
+  }
+
+  p {
+    color: darken($color: $white, $amount: 62%);
+  }
   img {
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%);
+    object-fit: contain;
+    width: 100%;
+    margin: auto;
+    border: 2px dotted $primary-color;
   }
 }
 
@@ -63,8 +90,10 @@
 
 .letter {
   img {
+    margin-top: 50px;
     transform: rotate(20deg);
     border: 1px solid;
+    object-fit: contain;
   }
 }
 

@@ -12,9 +12,10 @@ function Offers() {
             <div className="row services__container">
                  {services.map((e, i )=> {
                      return (
-                         <div key={i} className="service col-sx-6 col-md-4 text-center">
-                               <i class="fab fa-artstation fa-3x "></i>
-                               <h6>{e.name}</h6>
+                         <div key={i} className=" col-sx-6 col-md-4 text-center">
+                             <div  className={ i % 2 !== 0 ? "service outService " : ` service`}>
+                             <i class="fab fa-artstation fa-3x "></i>
+                               <h6 className="mt-4">{e.name}</h6>
                                <ul>
                                    {e.items.map((item, index) => {
                                        return (
@@ -22,6 +23,8 @@ function Offers() {
                                        )
                                    })}
                                </ul>
+                             </div>
+                              
                          </div>
                      )
                  })}

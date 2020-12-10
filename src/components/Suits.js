@@ -11,7 +11,7 @@ function Suits() {
             </div>
             <div className="suits__container row">
                  {private_suits.map((e, i) => 
-                    <div key={i} className="col-xs-12 col-sm-6 col-md-4 suit" >
+                    <div key={i} className="col-xs-12 col-sm-6 col-md-6 suit" >
                         <div className="img__container">
                             <img src={require(`../assets/${e.image}`).default} alt=""/>
                              <button style={{background: i%2 === 0 ? "#ef833a" : ""}} className="button info-button px-5 py-4">{e.name}</button>
