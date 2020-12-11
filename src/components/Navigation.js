@@ -18,7 +18,7 @@ function Navigation() {
                     {routes && routes.map(link =>  {
                         return (
                             <li key={link.route}  className="nav-item ">
-                                <NavLink activeStyle={{ color:'#ef833a' }} className="nav-link" to={link.route}>{link.name}</NavLink>
+                                <NavLink  activeStyle={{ color: '#ef833a' }} className="nav__link" to={link.route}>{link.name}</NavLink>
                             </li>
                         )
                     }

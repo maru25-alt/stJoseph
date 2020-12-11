@@ -3,7 +3,7 @@ import {amenities} from '../data'
 import AmenityCard from './AmenityCard'
 
 function Tour() {
-    const size = 3
+    const size = 2
     return (
         <div id="tour" className="section tour__section">
             <div className="section__heading text-center">

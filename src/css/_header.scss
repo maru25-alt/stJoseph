@@ -2,6 +2,8 @@
   position: relative;
   min-height: 120vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       0deg,
       lighten($primary-color, 10%),
@@ -47,11 +49,7 @@
     top: 30%;
     color: $white;
     margin: 0 20%;
-
     padding: 10px;
-    //transform: translate(-50%);
-    // animation-duration: 3s;
-    // animation-name: backInLeft;
 
     h1 {
       margin-bottom: 30px;
@@ -82,8 +80,8 @@
 }
 
 .navbar {
-  background-color: #eee;
-
+  background-color: darken($color: $primary-color, $amount: 10%);
+  padding: 0 10px !important;
   @media #{$mobile_device} {
     background-color: darken($color: $primary-color, $amount: 10%);
   }
@@ -108,17 +106,93 @@
     color: $white !important;
   }
 
-  .nav-link {
+  .nav__link {
     font-size: larger;
-    color: $primary-color !important;
+    color: $white;
+    margin-left: 20px;
     @media #{$mobile_device} {
-      color: $white !important;
+      color: $white;
     }
     @media #{$tablet_device} {
-      color: $white !important;
+      color: $white;
     }
     &:hover {
-      color: darken($color: $secondary-color, $amount: 10%) !important;
+      color: darken($color: $secondary-color, $amount: 10%);
+    }
+  }
+}
+
+.carousel__header {
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    ),
+    url("../assets/bg.jpg");
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &:before {
+    /* use before property (pseudo-element)  */
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      0deg,
+      lighten($primary-color, 10%),
+      rgba(255, 0, 150, 0.3)
+    );
+  }
+}
+
+.img-gradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(
+    0deg,
+    lighten($primary-color, 10%),
+    rgba(255, 0, 150, 0.3)
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.header__content {
+  border: 1px solid $secondary-color;
+  color: $white;
+  padding: 5px 10px;
+  margin: 10%;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 50px !important;
+  }
+
+  .button {
+    background-color: darken($color: $primary-color, $amount: 10%);
+    color: $white;
+    padding: 20px 50px !important;
+    margin-top: 100px !important;
+    border: 1px solid darken($color: $primary-color, $amount: 10%);
+    &:hover {
+      color: $secondary-color;
+      border-color: $secondary-color;
     }
   }
 }

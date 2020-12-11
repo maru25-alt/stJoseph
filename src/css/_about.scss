@@ -16,6 +16,11 @@
     border: 2px $secondary-color dotted;
     margin-bottom: 50px;
   }
+  h1 {
+    &:hover {
+      color: $white;
+    }
+  }
   .about__content {
     display: flex;
 

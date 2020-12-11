@@ -33,7 +33,7 @@ span {
 }
 p {
   font-family: "Jura", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: darken($color: $white, $amount: 12%);
 }
 input:focus,
@@ -42,11 +42,15 @@ textarea:focus {
   outline: none;
 }
 
+.error {
+  color: red;
+}
+
 a:hover {
   text-decoration: none;
 }
 .section {
-  padding: 110px 100px;
+  padding: 50px 100px;
 }
 
 .upper__text {

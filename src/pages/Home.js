@@ -5,7 +5,7 @@ import Tour from '../components/Tour';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import ServicesSection from '../components/ServicesSection';
-import TestimoniesSection from '../components/TestimoniesSection';
+//import TestimoniesSection from '../components/TestimoniesSection';
 
 function Home() {
     return (
@@ -14,9 +14,9 @@ function Home() {
            <Tour/>
            <AboutSection/>
             <ServicesSection/>
-            <div className="testmonies__bg">
+            {/* <div className="testmonies__bg">
                   <TestimoniesSection/>
-            </div>
+            </div> */}
 
            <ContactSection/>
         </div>

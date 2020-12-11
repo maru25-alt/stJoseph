@@ -67,16 +67,21 @@
 }
 
 .suits__container {
+  margin-bottom: 0;
   .suit {
-    margin-bottom: 100px;
-    opacity: 0.9;
+    margin-bottom: 50px;
+    opacity: 1;
 
     &:hover {
-      transform: scale(1.08);
-      opacity: 1;
+      transform: scale(1.02);
+      opacity: 0.3;
       img {
         border: 3px dotted;
       }
+    }
+
+    &:hover button {
+      opacity: 1 !important;
     }
     .img__container {
       position: relative;
@@ -91,6 +96,7 @@
         bottom: -20px;
         left: 10px;
         margin: 0 !important;
+        z-index: 1000;
       }
     }
   }

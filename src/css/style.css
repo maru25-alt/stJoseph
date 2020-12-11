@@ -7,6 +7,8 @@
   position: relative;
   min-height: 120vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#5d2ea2), to(rgba(255, 0, 150, 0.3))), url("../assets/bg.jpg");
   background-image: linear-gradient(0deg, #5d2ea2, rgba(255, 0, 150, 0.3)), url("../assets/bg.jpg");
 }
@@ -108,7 +110,8 @@
 }
 
 .navbar {
-  background-color: #eee;
+  background-color: #2f1852;
+  padding: 0 10px !important;
 }
 
 @media (max-width: 767px) {
@@ -133,25 +136,96 @@
   color: #fff !important;
 }
 
-.navbar .nav-link {
+.navbar .nav__link {
   font-size: larger;
-  color: #46237a !important;
+  color: #fff;
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
-  .navbar .nav-link {
-    color: #fff !important;
+  .navbar .nav__link {
+    color: #fff;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .navbar .nav-link {
-    color: #fff !important;
+  .navbar .nav__link {
+    color: #fff;
   }
 }
 
-.navbar .nav-link:hover {
-  color: #f29d69 !important;
+.navbar .nav__link:hover {
+  color: #f29d69;
+}
+
+.carousel__header {
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5d2ea2), to(rgba(255, 0, 150, 0.3))), url("../assets/bg.jpg");
+  background-image: linear-gradient(0deg, #5d2ea2, rgba(255, 0, 150, 0.3)), url("../assets/bg.jpg");
+}
+
+.carousel__header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.carousel__header:before {
+  /* use before property (pseudo-element)  */
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#5d2ea2), to(rgba(255, 0, 150, 0.3)));
+  background-image: linear-gradient(0deg, #5d2ea2, rgba(255, 0, 150, 0.3));
+}
+
+.img-gradient:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#5d2ea2), to(rgba(255, 0, 150, 0.3)));
+  background: linear-gradient(0deg, #5d2ea2, rgba(255, 0, 150, 0.3));
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+.header__content {
+  border: 1px solid #f6bc98;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 10%;
+}
+
+.header__content h1 {
+  margin-bottom: 30px;
+}
+
+.header__content p {
+  margin-bottom: 50px !important;
+}
+
+.header__content .button {
+  background-color: #2f1852;
+  color: #fff;
+  padding: 20px 50px !important;
+  margin-top: 100px !important;
+  border: 1px solid #2f1852;
+}
+
+.header__content .button:hover {
+  color: #f6bc98;
+  border-color: #f6bc98;
 }
 
 .tours__container .tour {
@@ -231,19 +305,27 @@
   text-transform: uppercase;
 }
 
+.suits__container {
+  margin-bottom: 0;
+}
+
 .suits__container .suit {
-  margin-bottom: 100px;
-  opacity: 0.9;
+  margin-bottom: 50px;
+  opacity: 1;
 }
 
 .suits__container .suit:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  opacity: 1;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0.3;
 }
 
 .suits__container .suit:hover img {
   border: 3px dotted;
+}
+
+.suits__container .suit:hover button {
+  opacity: 1 !important;
 }
 
 .suits__container .suit .img__container {
@@ -261,6 +343,7 @@
   bottom: -20px;
   left: 10px;
   margin: 0 !important;
+  z-index: 1000;
 }
 
 .about__section {
@@ -278,6 +361,10 @@
   width: 100%;
   border: 2px #f6bc98 dotted;
   margin-bottom: 50px;
+}
+
+.about__section h1:hover {
+  color: #fff;
 }
 
 .about__section .about__content {
@@ -715,7 +802,7 @@ span {
 
 p {
   font-family: "Jura", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #e0e0e0;
 }
 
@@ -725,12 +812,16 @@ textarea:focus {
   outline: none;
 }
 
+.error {
+  color: red;
+}
+
 a:hover {
   text-decoration: none;
 }
 
 .section {
-  padding: 110px 100px;
+  padding: 50px 100px;
 }
 
 .upper__text {

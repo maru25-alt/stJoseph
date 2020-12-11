@@ -41,8 +41,9 @@ YOU NEED TO COMPLETE ANOTHER ONE TO BE RECONSIDERED AFTER THIS DATE.</h6>
                        If you are interested in obtaining a position as a Certified Home Health Aide, Occupational Therapist, Social Worker, Physical Therapist etc. please click the link below:
                        </p>
                        <div>
-                           <button className="button info-Btn">Download Application form</button>
-                           <button className="button success-Btn">Send Complete Application</button>
+                       {/* <a href="../assets/application-for-employment.doc" download="proposed_file_name">Download</a> */}
+                           <a href="../assets/application-for-employment.doc" download="application-for-employment.doc" className="button info-Btn">Download Application form</a>
+                           <a href="mailto:info@stjosephmanor.com" className="button success-Btn">Send Complete Application</a>
                        </div>
                    </div>
                </div>
