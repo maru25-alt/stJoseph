@@ -18,6 +18,7 @@ function TestimoniesSection({bg}) {
                                <img src={img} alt=""/>
                                <p>{res.comment}</p>
                                <h6>{res.usernane}</h6>
+                               <span>2 hours ago</span>
                          </div>
                     </div>  
                      )
